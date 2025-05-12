@@ -2,7 +2,7 @@
 
 * {
     font-family: "MesloLGS Nerd Font Mono Bold";
-    font-size: 16px;
+    font-size: 14px;
     min-height: 0;
     font-weight: bold;
 }
@@ -30,8 +30,8 @@ button {
 
 button:hover {
     background: inherit;
-    color: @mauve;
-    border-top: 2px solid @mauve;
+    color: @cyan;
+    border-top: 2px solid @cyan;
 }
 
 #workspaces button {
@@ -40,14 +40,14 @@ button:hover {
 
 #workspaces button.focused {
     background-color: rgba(0, 0, 0, 0.3);
-    color: @rosewater;
-    border-top: 2px solid @rosewater;
+    color: @blue;
+    border-top: 2px solid @blue;
 }
 
 #workspaces button.active {
     background-color: rgba(0, 0, 0, 0.3);
-    color: @mauve;
-    border-top: 2px solid @mauve;
+    color: @blue;
+    border-top: 2px solid @blue;
 }
 
 #workspaces button.urgent {
@@ -76,13 +76,13 @@ button:hover {
 }
 
 #clock {
-    color: @maroon;
-    border-bottom: 2px solid @maroon;
+     color: @blue;
+    border-bottom: 2px solid @blue;
 }
 
 #clock.date {
-    color: @mauve;
-    border-bottom: 2px solid @mauve;
+    color: @blue;
+    border-bottom: 2px solid @blue;
 }
 
 #pulseaudio {
