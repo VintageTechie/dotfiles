@@ -45,6 +45,25 @@
           "default": ["", "", " "]
       },
       "on-click": "pavucontrol"
+  },
+
+  "hyprland/workspaces": {
+     "all-outputs": false,
+      "disable-scroll": true,
+      "format": "{name}",
+      "format-icons": {
+          "1:home": "", // Icon: firefox-browser
+          "2:games": "", // Icon: mail
+          "3:editor": "", // Icon: code
+          "4:terminals": "", // Icon: terminal
+          "5:portal": "", // Icon: terminal
+          "urgent": "",
+          "focused": "",
+          "default": ""
+    },
+    "ignore-workspaces": [
+        "(special:)?chrome-sharing-indicator" // Ignore certain workspaces
+    ]
   }
   
 }
