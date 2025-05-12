@@ -1,0 +1,3 @@
+theme = catppuccin-mocha
+gtk-titlebar = true
+background-opacity = 0.95
