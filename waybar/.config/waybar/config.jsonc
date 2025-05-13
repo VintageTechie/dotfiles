@@ -2,7 +2,7 @@
   "position": "top",
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["tray","pulseaudio/slider","pulseaudio","clock","power-profiles-daemon","custom/power"],
+  "modules-right": ["tray","user","pulseaudio/slider","pulseaudio","clock","power-profiles-daemon","custom/power"],
   "clock": {
     "format": "<span foreground='#f5c2e7'>  </span>{:%I:%M %p}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
@@ -49,20 +49,27 @@
   },
 
   "hyprland/workspaces": {
-     "all-outputs": false,
-      "disable-scroll": true,
-      "format": "{name} {icon}",
-      "format-icons": {
-          "1:home": "", // Icon: firefox-browser
-          "2:games": "", // Icon: mail
-          "3:editor": "", // Icon: code
-          "4:terminals": "", // Icon: terminal
-          "5:portal": "", // Icon: terminal
-          "urgent": "",
-          "focused": "",
-          "default": ""
-   
-       }
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "urgent": "",
+      "active": "",
+      "default": ""
+    },
+    "sort-by-number": true
+  },
+    "user": {
+        "format": "{user} (up {work_d} days ↑)",
+        "interval": 60,
+        "height": 30,
+        "width": 30,
+        "icon": true,
+        "avatar": "$HOME/Pictures/avatar.png"
     },
     "ignore-workspaces": [
         "(special:)?chrome-sharing-indicator" // Ignore certain workspaces
