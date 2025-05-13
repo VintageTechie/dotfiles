@@ -61,6 +61,12 @@ button:hover {
 #memory,
 #disk,
 #temperature,
+#temperature.cpu {
+  color: rgba(200, 200, 200, 0.95);
+  font-weight: bold;
+  padding-right: 12px
+}
+
 #backlight,
 #wireplumber,
 #tray,
@@ -162,4 +168,9 @@ button:hover {
 }
 #power-profiles-daemon.power-saver {
   color: #50fa7b;
+}
+#custom-nvidia {
+  color: rgba(200, 200, 200, 0.95);
+  font-weight: bold;
+  padding-right: 12px;
 }

@@ -2,7 +2,7 @@
   "position": "top",
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["tray","user","pulseaudio/slider","pulseaudio","clock","power-profiles-daemon","custom/power"],
+  "modules-right": ["tray","temperature#cpu","custom/nvidia_temp","pulseaudio/slider","pulseaudio","clock","power-profiles-daemon","custom/power"],
   "clock": {
     "format": "<span foreground='#f5c2e7'>  </span>{:%I:%M %p}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
@@ -71,6 +71,20 @@
         "icon": true,
         "avatar": "$HOME/Pictures/avatar.png"
     },
+    "custom/nvidia_temp": {
+    "format": "GPU {}",
+    "interval": 5,
+    "exec": "~/.config/waybar/scripts/nvidia-temp.sh",
+    "tooltip": false
+  },
+
+   "temperature#cpu": {
+    "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
+    "critical-threshold": 85,
+    "format": "CPU {temperatureC}°C",
+    "tooltip": true
+  },
+
     "ignore-workspaces": [
         "(special:)?chrome-sharing-indicator" // Ignore certain workspaces
     ]
