@@ -13,6 +13,7 @@
     "tray",
     "temperature#cpu",
     "custom/nvidia_temp",
+    "pulseaudio/slider",
     "pulseaudio",
     "clock",
     "power-profiles-daemon",
@@ -50,30 +51,20 @@
       "power-saver": ""
     }
   },
-  "pulseaudio": {
-    "scroll-step": 3, // %, can be a float
-    "format": "{icon} {volume}% {format_source}",
-    "format-bluetooth": "{volume}% {icon} {format_source}",
-    "format-bluetooth-muted": " {icon} {format_source}",
-    "format-muted": " {format_source}",
-    //"format-source": "{volume}% ",
-    //"format-source-muted": "",
-    "format-source": "",
-    "format-source-muted": "",
-    "format-icons": {
-      "headphone": "",
-      "hands-free": "",
-      "headset": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
-      "default": [
-        "",
-        "",
-        ""
-      ]
-    },
-    "on-click": "pavucontrol",
+   "pulseaudio/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "horizontal"
+  },
+    "pulseaudio": {
+      "format": "{icon}  {volume}%",
+      "format-muted": "",
+      "format-icons": {
+          "default": ["", "", " "]
+      },
+      "on-click": "pavucontrol"
+  },
+  "on-click": "pavucontrol",
     "on-click-right": "amixer sset Master toggle"
   },
   "custom/nvidia_temp": {
