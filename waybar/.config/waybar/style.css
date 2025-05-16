@@ -1,21 +1,18 @@
 @import "colors.css"; 
 
 * {
-    font-family: "Adwaita Mono", "Font Awesome 6 Free", "Font Awesome 6 Brands", "MesloLGS Nerd Font Mono", monospace;
-    font-size: 14px;
+    font-family: "MesloLGS Nerd Font Mono", "Font Awesome 6 Free", "Font Awesome 6 Brands", "Adwaita Mono", monospace;
+    font-size: 18px;
     font-weight: normal;
-    min-height: 0;
-    border: none;
-    border-radius: 0
 }
 
 #window {
     margin: 8px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 window#waybar {
-    opacity: 0.9;
+    opacity: 100;
     background: @background-darker;
     color: @foreground;
     border-bottom: 2px solid @background;
