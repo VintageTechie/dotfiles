@@ -29,3 +29,4 @@ alias cleanorphans='sudo pacman -Rns $(pacman -Qdtq)'
 
 # Created by `pipx` on 2025-05-16 00:52:54
 export PATH="$PATH:/home/john/.local/bin"
+export PATH="$HOME/.cargo/bin:$PATH"
