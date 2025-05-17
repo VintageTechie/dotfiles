@@ -22,14 +22,14 @@ client_fullscreen = "[{icon}]{delim}"
 [class]
 DEFAULT = "󰘚"  # fallback box
 
-"(?i)com\\.mitchellh\\.ghostty" = ""
+"(?i)com\\.mitchellh\\.ghostty" = ""
 "(?i)code-oss" = ""
 "(?i)code" = ""
 "(?i)steam" = ""
 "(?i)brave-browser" = ""
 "(?i)firefox" = ""
 "(?i)nautilus" = ""
-"(?i)discord" = ""
+"(?i)discord" = ""
 "(?i)kitty" = ""
 "(?i)alacritty" = ""
 

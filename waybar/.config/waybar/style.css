@@ -1,7 +1,7 @@
 @import "colors.css"; 
 
 * {
-    font-family: "MesloLGS Nerd Font", "Font Awesome 6 Free", "Font Awesome 6 Brands", "Adwaita Mono", monospace;
+    font-family: "MesloLGS Nerd Font","Font Awesome 6 Free", "Font Awesome 6 Brands", "Adwaita Mono", monospace;
     font-size: 16px;
     font-weight: normal;
 }
